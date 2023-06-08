@@ -1,0 +1,17 @@
+﻿@model Travel_Projesi.Models.Siniflar.Hakkimizda 
+@{
+    ViewBag.Title = "YeniHakkimda";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Hakkimda</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.FotoUrl)
+    @Html.TextBoxFor(x => x.FotoUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary"> Hakkinda Ekle</button>
+</form>

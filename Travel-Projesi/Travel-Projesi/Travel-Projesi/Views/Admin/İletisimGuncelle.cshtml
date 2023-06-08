@@ -1,0 +1,24 @@
+﻿@model Travel_Projesi.Models.Siniflar.İletisim
+
+@{
+    ViewBag.Title = "İletisimGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim Güncelle</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.AdSoyad)
+    @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mail)
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Konu)
+    @Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Mesaj)
+    @Html.TextAreaFor(x => x.Mesaj, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Yeni İletişim Bilgisi Güncelle</button>
+</form>
